@@ -1,0 +1,13 @@
+.menuIco {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    position: relative;
+  }
+  
+  .menuIco .vector {
+    height: 48.45px;
+    position: relative;
+    width: 130px;
+  }
