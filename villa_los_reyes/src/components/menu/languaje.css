@@ -43,7 +43,7 @@
   
   .options-default .text-wrapper {
     align-self: stretch;
-    color: var(--m-3refsecondarysecondary-70);
+    color: rgba(244, 149, 22, 1);
     font-family: "Poppins-Bold", Helvetica;
     font-size: 13px;
     font-weight: 700;

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDropDown } from "./arrow_drop_down.svg";
+import { ArrowDropDownScreen } from "./ArrowDropDown.js";
 import "./languaje.css";
 
 export const OptionsDefault = () => {
@@ -11,7 +11,7 @@ export const OptionsDefault = () => {
             <div className="text-wrapper">ES</div>
           </div>
 
-          <ArrowDropDown className="arrow-drop-down" color="#F49516" />
+          <ArrowDropDownScreen className="arrow-drop-down" color="#F49516" />
         </div>
       </div>
     </div>
