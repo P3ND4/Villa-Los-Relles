@@ -58,6 +58,12 @@
 /*TODO: terminar este text-wrapper*/
 .tabs .text-wrapper{
     color: rgba(244, 149, 22, 1);
+    font-family: 'Poppins', Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 20px;
     margin-bottom: -4.00px;
     margin-top: -6.00px;
     position: relative;
