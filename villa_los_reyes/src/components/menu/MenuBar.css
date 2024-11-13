@@ -10,6 +10,7 @@
     position: relative;
     width: 1920px;
 }
+
 .menu .frame-4{
     align-items: center;
     display: inline-flex;
@@ -18,10 +19,22 @@
     justify-content: center;
     position: relative;
 }
-.menu .icon-frame{
+.menu .menuIco {
     background-color: #003e2e;
-    flex:0 0 auto !important;
-    position: relative !important;
+    align-items: flex-start;
+    flex-direction: column;
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    position: relative;
+    height: 56px;
+}
+
+
+.menu .vector {
+    height: 48.45px;
+    position: relative;
+    width: 130px;
 }
 
 .menu .frame-5{
@@ -31,3 +44,4 @@
     justify-content: center;
     position: relative;
 }
+

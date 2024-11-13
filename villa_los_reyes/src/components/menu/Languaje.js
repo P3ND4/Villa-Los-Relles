@@ -11,7 +11,7 @@ export const OptionsDefault = () => {
             <div className="text-wrapper">ES</div>
           </div>
 
-          <ArrowDropDownScreen className="arrow-drop-down" color="#F49516" />
+          <ArrowDropDownScreen className="arrow-drop-down"  />
         </div>
       </div>
     </div>
