@@ -6,9 +6,8 @@
     gap: 10px;
     height: 80px;
     justify-content: center;
-    padding: 0px 170px;
     position: relative;
-    width: 1920px;
+    width: 100%;
 }
 
 .menu .frame-4{
@@ -45,3 +44,29 @@
     position: relative;
 }
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 1470px) {
+    .menu {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        padding: 10px; /* Reduce el padding para ahorrar espacio */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .menu .frame-4 {
+        flex-direction: column; /* Alinea el ícono y los botones en una columna */
+        align-items: center;
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+    }
+
+    .menu .frame-5 {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
+        gap: 5px; /* Menor espacio entre botones */
+        justify-content: center; /* Centra los botones en pantalla pequeña */
+    }
+
+    .menu .menuIco {
+        width: 80px; /* Tamaño más pequeño para el ícono */
+        height: auto;
+    }
+}
