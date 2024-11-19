@@ -45,7 +45,7 @@
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 1470px) {
+@media (max-width: 1200px) {
     .menu {
         flex-direction: column; /* Coloca los elementos en una columna */
         padding: 10px; /* Reduce el padding para ahorrar espacio */

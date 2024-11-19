@@ -12,23 +12,46 @@ export const MenuButton = ({ property1 }) => {
       <div className="tab">
         <div className="state-layer">
           <div className="tab-contents">
-          {!isHovered && property1 === 'default' && (
+          {!isHovered && (
             <> 
-              <div className="label">
-                Conoce
-                <br />
-                Villa Los Reyes
-              </div>
+              {
+                property1.columns === 1 && ( 
+                <div className="label">
+                  {property1.texts[0]}
+                </div>
+              )}
+
+              {
+                property1.columns === 2 && ( 
+                <div className="label">
+                  {property1.texts[0]}
+                  <br />
+                  {property1.texts[1]}
+                </div>
+              )}
+
+              
             </>
           )}
             
           {isHovered && (
             <>
-              <div className="text-wrapper">
-                Conoce
-                <br />
-                Villa Los Reyes
-              </div>
+              {
+                property1.columns === 1 && ( 
+                <div className="text-wrapper">
+                  {property1.texts[0]}
+                </div>
+              )}
+
+              {
+                property1.columns === 2 && ( 
+                <div className="text-wrapper">
+                  {property1.texts[0]}
+                  <br/>
+                  {property1.texts[1]}
+                </div>
+              )}
+
 
               <div className="indicator">
                 <div className="shape" />
@@ -44,5 +67,8 @@ export const MenuButton = ({ property1 }) => {
 };
 
 MenuButton.propTypes = {
-  property1: PropTypes.oneOf(["default", 'select']),
+  property1: PropTypes.shape({
+    columns: PropTypes.number.isRequired, // Número de columnas
+    texts: PropTypes.arrayOf(PropTypes.string).isRequired, // Lista de textos
+  }).isRequired
 };

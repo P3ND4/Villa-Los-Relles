@@ -12,13 +12,13 @@ export const MenuBar = () => {
                     <img className="vector" alt="Vector" src={vector} />
                 </div>
                 <div className='frame-5'>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
-                    <MenuButton property1={'default'}/>
+                    <MenuButton property1={{columns:1, texts:['Inicio']}}/>
+                    <MenuButton property1={{columns:2, texts:['Conoce', 'Villa Los Reyes']}}/>
+                    <MenuButton property1={{columns:2, texts:['Nuestras', 'Habitaciones']}}/>
+                    <MenuButton property1={{columns:2, texts:['Servicios', 'e instalaciones']}}/>
+                    <MenuButton property1={{columns:2, texts:['Experiencias', 'y aventuras']}}/>
+                    <MenuButton property1={{columns:2, texts:['Paquetes', 'Promocionales']}}/>
+                    <MenuButton property1={{columns:2, texts:['Reseñas', 'y comentarios']}}/>
                 </div>
                 <OptionsDefault />
             </div>
