@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Villa-Los-Reyes/static/css/main.7a2a71d3.css",
-    "main.js": "/Villa-Los-Reyes/static/js/main.fe80efa9.js",
+    "main.css": "/Villa-Los-Reyes/static/css/main.915866ac.css",
+    "main.js": "/Villa-Los-Reyes/static/js/main.2674627e.js",
     "static/js/453.bac20a8e.chunk.js": "/Villa-Los-Reyes/static/js/453.bac20a8e.chunk.js",
     "static/media/menu_logo.svg": "/Villa-Los-Reyes/static/media/menu_logo.370125a258ac33fbd3b26c982a598466.svg",
     "index.html": "/Villa-Los-Reyes/index.html",
     "static/media/arrow_drop_down.svg": "/Villa-Los-Reyes/static/media/arrow_drop_down.53d1a152c93e0189d83f05500ffef0d5.svg",
-    "main.7a2a71d3.css.map": "/Villa-Los-Reyes/static/css/main.7a2a71d3.css.map",
-    "main.fe80efa9.js.map": "/Villa-Los-Reyes/static/js/main.fe80efa9.js.map",
+    "main.915866ac.css.map": "/Villa-Los-Reyes/static/css/main.915866ac.css.map",
+    "main.2674627e.js.map": "/Villa-Los-Reyes/static/js/main.2674627e.js.map",
     "453.bac20a8e.chunk.js.map": "/Villa-Los-Reyes/static/js/453.bac20a8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a2a71d3.css",
-    "static/js/main.fe80efa9.js"
+    "static/css/main.915866ac.css",
+    "static/js/main.2674627e.js"
   ]
 }
