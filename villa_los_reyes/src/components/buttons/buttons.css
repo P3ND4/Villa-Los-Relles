@@ -10,6 +10,7 @@
   background: var(--M3-ref-secondary-secondary70, #F49516);
   height: 45px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .yellow-buttom:hover{
