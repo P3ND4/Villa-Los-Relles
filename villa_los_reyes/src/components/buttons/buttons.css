@@ -1,0 +1,48 @@
+@import url('../../styles/styleguide.css');
+
+.yellow-buttom{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--Corner-Extra-large, 28px);
+  background: var(--M3-ref-secondary-secondary70, #F49516);
+  height: 45px;
+  cursor: pointer;
+}
+
+.yellow-buttom:hover{
+  border-radius: var(--Corner-Extra-large, 28px);
+  background: var(--M3-ref-secondary-secondary60, #D17D00);
+
+  /* M3/Elevation Light/1 */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);   
+  transform: translateY(-0.8px);
+}
+
+
+.yellow-buttom .state-layer{
+  display: flex;
+  height: 40px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.yellow-buttom .text{
+  color: var(--Schemes-On-Primary, #FFF);
+  text-align: center;
+
+  /* M3/label/medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}

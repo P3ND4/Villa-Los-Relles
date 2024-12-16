@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {MenuButton} from './MenuButon.js'
-import { OptionsDefault } from './Languaje.js';
+import { Language } from './Language.js';
 import { MobileMenu } from './MobileMenu.js';
+import { Yellow_button } from '../buttons/button.js';
 import vector from "./menu_logo.svg";
-import './MenuBar.css'
+import './MenuBar.css';
+
 export const MenuBar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
@@ -16,20 +18,18 @@ export const MenuBar = () => {
         <>
             {!isMobile && (
                 <div className='menu'>
-                    <div className='frame-4'>
-                        <div className="menuIco">
-                            <img className="vector" alt="Vector" src={vector} />
-                        </div>
-                        <div className='frame-5'>
-                            <MenuButton property1={{columns:1, texts:['Inicio']}}/>
-                            <MenuButton property1={{columns:2, texts:['Conoce', 'Villa Los Reyes']}}/>
-                            <MenuButton property1={{columns:2, texts:['Nuestras', 'Habitaciones']}}/>
-                            <MenuButton property1={{columns:2, texts:['Servicios', 'e instalaciones']}}/>
-                            <MenuButton property1={{columns:2, texts:['Experiencias', 'y aventuras']}}/>
-                            <MenuButton property1={{columns:2, texts:['Paquetes', 'Promocionales']}}/>
-                            <MenuButton property1={{columns:2, texts:['Reseñas', 'y comentarios']}}/>
-                        </div>
-                        <OptionsDefault />
+                    <div className="menuIco">
+                        <img className="vector" alt="Vector" src={vector} />
+                    </div>
+                    <div className='frame-5'>
+                        <MenuButton property1={{columns:1, texts:['Inicio']}}/>
+                        <MenuButton property1={{columns:1, texts:['Conocenos']}}/>
+                        <MenuButton property1={{columns:2, texts:['Servicios', 'e instalaciones']}}/>
+                        <MenuButton property1={{columns:2, texts:['Experiencias', 'y aventuras']}}/>
+                        <MenuButton property1={{columns:1, texts:['Blog']}}/>
+                        <Yellow_button text={'Reservar'}/>
+                        <Language/>
+
                     </div>
                 </div>
             )}
@@ -41,7 +41,7 @@ export const MenuBar = () => {
                                 <img className="vector" alt="Vector" src={vector} />
                             </div>
                             <div className='div3'>
-                                <OptionsDefault />
+                                <Language />
                                 <MobileMenu exp={false}/>
                             </div>
                         </div>

@@ -1,26 +1,14 @@
 .menu {
-  align-items: center;
-  background-color: #003e2e;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 80px;
-  justify-content: center;
-  position: relative;
-  width: 100%;
+  width: 87.5%;
+  padding: 15px 119px 15px 121px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--M3-sys-dark-on-primary-fixed-variant, #00513D);
 }
 
-.menu .frame-4 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 20px;
-  justify-content: center;
-  position: relative;
-}
 
 .menu .menuIco {
-  background-color: #003e2e;
   align-items: flex-start;
   flex-direction: column;
   display: inline-flex;
@@ -43,6 +31,7 @@
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
+  gap: 12px;
 }
 
 
@@ -86,11 +75,6 @@
 }
 
 
-.mobile-menue .options{
-  flex: 0 0 auto !important;
-  position: relative !important;
-}
-
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 1200px) {
@@ -113,12 +97,9 @@
 
   .menu .frame-5 {
     display: flex;
-    flex-wrap: wrap;
-    /* Permite que los botones se ajusten en varias líneas si es necesario */
-    gap: 5px;
-    /* Menor espacio entre botones */
-    justify-content: center;
-    /* Centra los botones en pantalla pequeña */
+    width: 816px;
+    align-items: center;
+    gap: 12px; 
   }
 
   .menu .menuIco {

@@ -1,65 +1,60 @@
 import PropTypes from "prop-types";
 import React, { useState } from 'react';
 import "./MenuButton.css";
+import { ReactComponent as Indicator } from './Indicator_big.svg'; // Importa el SVG
 
 export const MenuButton = ({ property1 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="tabs"
+    <div className="tab"
     onMouseEnter={() => setIsHovered(true)} 
     onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="tab">
-        <div className="state-layer">
-          <div className="tab-contents">
-          {!isHovered && (
-            <> 
-              {
-                property1.columns === 1 && ( 
-                <div className="label">
-                  {property1.texts[0]}
-                </div>
-              )}
+      <div className="state-layer">
+        <div className="tab-contents">
+        {!isHovered && (
+          <> 
+            {
+              property1.columns === 1 && ( 
+              <div className="label">
+                {property1.texts[0]}
+              </div>
+            )}
 
-              {
-                property1.columns === 2 && ( 
-                <div className="label">
-                  {property1.texts[0]}
-                  <br />
-                  {property1.texts[1]}
-                </div>
-              )}
+            {
+              property1.columns === 2 && ( 
+              <div className="label">
+                {property1.texts[0]}
+                <br />
+                {property1.texts[1]}
+              </div>
+            )}
 
               
-            </>
+          </>
           )}
             
-          {isHovered && (
-            <>
-              {
-                property1.columns === 1 && ( 
-                <div className="text-wrapper">
-                  {property1.texts[0]}
-                </div>
-              )}
-
-              {
-                property1.columns === 2 && ( 
-                <div className="text-wrapper">
-                  {property1.texts[0]}
-                  <br/>
-                  {property1.texts[1]}
-                </div>
-              )}
-
-
-              <div className="indicator">
-                <div className="shape" />
+        {isHovered && (
+          <>
+            {
+              property1.columns === 1 && ( 
+              <div className="text-wrapper">
+                {property1.texts[0]}
               </div>
-            </>
-          )}
+            )}
+
+            {
+              property1.columns === 2 && ( 
+              <div className="text-wrapper">
+                {property1.texts[0]}
+                <br/>
+                {property1.texts[1]}
+              </div>
+            )}
+            <Indicator className="indicator"/>
+          </>
+        )}
             
-          </div>
         </div>
       </div>
     </div>
